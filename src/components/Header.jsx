@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { megaMenus } from './config';
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -39,18 +40,18 @@ function Header() {
               </svg>
             </button>
 
-            <a href="#" className="hover:text-gray-400 transition-colors">
+            <Link to="#" className="hover:text-gray-400 transition-colors">
               <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true"
                 className="fill-current text-white">
                 <path
                   d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.35 3.12.88.01.47.01.84.01.93 0 .22-.16.47-.55.38A8.013 8.013 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
                 </path>
               </svg>
-            </a>
+            </Link>
 
-            <a href="#"
+            <Link to="https://github.com/login"
               className="text-white border border-white px-3 py-2 rounded-lg hover:text-gray-300 font-semibold text-sm">Sign
-              in</a>
+              in</Link>
 
           </nav>
 
@@ -72,9 +73,9 @@ function Header() {
                   d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.35 3.12.88.01.47.01.84.01.93 0 .22-.16.47-.55.38A8.013 8.013 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
                 </path>
               </svg>
-              <a href="#"
+              <Link to="#"
                 className="text-white border border-white px-3 py-2 rounded-lg hover:text-gray-300 font-semibold text-sm">Sign
-                in</a>
+                in</Link>
 
             </div>
 
@@ -128,7 +129,7 @@ function Header() {
               <ul className="space-y-4">
                 {col.items.map((item) => (
                   <li key={item.title}>
-                    <a href="#" className="block group relative pb-1 max-w-max">
+                    <Link to={item.hRef} className="block group relative pb-1 max-w-max">
                       <span className="text-white font-semibold text-lg">
                         {item.title}
                       </span>
@@ -138,7 +139,7 @@ function Header() {
                         </span>
                       )}
                       <span className="absolute bottom-0 left-0 block w-full h-0.5 bg-white origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out z-20" />
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -152,12 +153,12 @@ function Header() {
 
 
     <li>
-    <a 
-      href="#" 
+    <Link 
+      to="https://github.com/pricing" 
       className="w-full flex items-center justify-between px-4 py-4 font-semibold text-white   hover:text-gray-300 transition-colors"
     >
       Pricing
-    </a>
+    </Link>
   </li>
 </ul>
 
@@ -178,10 +179,10 @@ function Header() {
               </div>
 
               <div className="px-6 pb-6">
-                <a href="#"
+                <Link to="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home"
                   className="block w-full text-center bg-purple-950 hover:bg-black text-white font-semibold text-sm py-2.5 rounded-md transition-colors">
                   Sign up
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -195,14 +196,14 @@ function Header() {
           <nav className="max-w-8xl mx-auto px-6 h-16 flex items-center justify-between text-[18px]">
 
             <div className="flex items-center space-x-6">
-              <a href="#" className="hover:text-gray-400 transition-colors">
+              <Link to="#" className="hover:text-gray-400 transition-colors">
                 <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true"
                   className="fill-current text-white">
                   <path
                     d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.35 3.12.88.01.47.01.84.01.93 0 .22-.16.47-.55.38A8.013 8.013 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
                   </path>
                 </svg>
-              </a>
+              </Link>
 
               <div className="flex items-center space-x-4 font-semibold text-gray-300">
                 {navNames.map((name) => (
@@ -234,7 +235,7 @@ function Header() {
                                 <ul className="space-y-3">
                                   {col.items.map((item) => (
                                     <li key={item.title}>
-                                      <a href="#" className="group block">
+                                      <Link to={item.hRef} className="group block">
                                         <span className="relative inline-block text-white font-semibold text-sm pb-1 z-10">
                                           {item.title}
                                           {item.desc && (
@@ -242,7 +243,7 @@ function Header() {
                                           )}
                                           <span className="absolute bottom-0 left-0 block w-full h-0.5 bg-white origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out z-20" />
                                         </span>
-                                      </a>
+                                      </Link>
                                     </li>
                                   ))}
                                 </ul>
@@ -251,7 +252,7 @@ function Header() {
                           </div>
  {!["Open Source", "Enterprise"].includes(name) &&
                           <div className="block w-full px-8 py-4 rounded-b-3xl border-t border-gray-800 bg-[#111615] text-white font-semibold text-sm hover:bg-[#161b22] transition-colors">
-                            <a href="#" className="relative inline-flex items-center gap-1.5 pb-1 text-sm md:text-base font-semibold group">
+                            <Link to="#" className="relative inline-flex items-center gap-1.5 pb-1 text-sm md:text-base font-semibold group">
                               <span>View All Features</span>
                               <span className="inline-flex items-center translate-x-0 transition-transform duration-300 ease-out">
                                 <svg className="w-3.5 h-3.5 opacity-100 group-hover:opacity-0 group-hover:scale-50 transition-all duration-400 absolute" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -262,7 +263,7 @@ function Header() {
                                 </svg>
                               </span>
                               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-                            </a>
+                            </Link>
                           </div>}
                         </div>
                       </div>
@@ -270,7 +271,7 @@ function Header() {
                   </div>
                 ))}
 
-                <a href="#" className="hover:text-white transition-colors">Pricing</a>
+                <Link to="https://github.com/pricing" className="hover:text-white transition-colors">Pricing</Link>
               </div>
             </div>
 
@@ -289,26 +290,26 @@ function Header() {
                   className="absolute right-2.5 top-1.5 border border-gray-700 bg-gray-900 px-1.5 py-0.2 rounded text-[11px] text-gray-400">/</span>
               </div>
 
-              <a href="#" className="text-white hover:text-gray-300 font-semibold text-sm">Sign in</a>
+              <Link to="https://github.com/login" className="text-white hover:text-gray-300 font-semibold text-sm">Sign in</Link>
 
-              <a href="#"
+              <Link to="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home"
                 className="border border-white text-white hover:bg-white hover:text-black font-semibold text-sm py-1.5 px-3 rounded-md transition-colors duration-150">
                 Sign up
-              </a>
+              </Link>
             </div>
           </nav>
 
           <nav className="bg-[#010409]/60 backdrop-blur-md border-t border-gray-800">
             <div className="max-w-8xl mx-auto px-6 h-12 flex items-center space-x-6 text-[16px]">
-              <a href="#" className="font-semibold text-white border-b-2 border-[#1f6feb] h-full flex items-center px-1">
+              <Link to="#" className="font-semibold text-white border-b-2 border-[#1f6feb] h-full flex items-center px-1">
                 Enterprise
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors h-full flex items-center">
+              </Link>
+              <Link to="#" className="text-gray-400 hover:text-white transition-colors h-full flex items-center">
                 Advanced Security
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors h-full flex items-center">
+              </Link>
+              <Link to="#" className="text-gray-400 hover:text-white transition-colors h-full flex items-center">
                 Premium Support
-              </a>
+              </Link>
             </div>
           </nav>
 
