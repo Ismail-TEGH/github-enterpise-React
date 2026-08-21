@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const megaMenus = {
   Platform: [
     { heading: "AI CODE CREATION", items: [
@@ -127,7 +129,7 @@ export  const securityFeatures = [
       descriptionText: (
         <>
           Automate code, secret, and dependency scanning with 
-          <a href="#" className="text-[#7DD3FC] border-b hover:border-b-2 ml-1">GitHub Advanced Security</a>, 
+          <Link to="chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/html/site_status_block_page.html" className="text-[#7DD3FC] border-b hover:border-b-2 ml-1">GitHub Advanced Security</Link>, 
           built directly into the workflow.
         </>
       )
@@ -137,7 +139,7 @@ export  const securityFeatures = [
       descriptionText: (
         <>
           Visualize and maintain the dependencies in your 
-          <a href="#" className="text-[#7DD3FC] border-b hover:border-b-2 ml-1">software supply chain</a>.
+          <Link to="chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/html/site_status_block_page.html" className="text-[#7DD3FC] border-b hover:border-b-2 ml-1">software supply chain</Link>.
         </>
       )
     },
@@ -146,7 +148,7 @@ export  const securityFeatures = [
       descriptionText: (
         <>
           Enjoy SaaS agility with enhanced governance, security, and 
-          <a href="#" className="text-[#7DD3FC] border-b hover:border-b-2 ml-1">flexible data residency</a>.
+          <Link to="https://github.com/enterprise/data-residency" className="text-[#7DD3FC] border-b hover:border-b-2 ml-1">flexible data residency</Link>.
         </>
       )
     }
@@ -158,7 +160,7 @@ export  const securityFeatures = [
       boldTitle: "Manage multiple orgs from one place.",
       descriptionText: (
         <>
-          Create and assign <a href="#" className="text-[#7DD3FC] border-b hover:border-b-2">custom roles</a> and <a href="#" className="text-[#7DD3FC] border-b hover:border-b-2">teams</a> to streamline management across your enterprise.
+          Create and assign <Link to="https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/enterprise-fundamentals/roles-in-an-enterprise" className="text-[#7DD3FC] border-b hover:border-b-2">custom roles</Link> and <Link to="https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/enterprise-fundamentals/teams-in-an-enterprise" className="text-[#7DD3FC] border-b hover:border-b-2">teams</Link> to streamline management across your enterprise.
         </>
       )
     },
@@ -166,7 +168,7 @@ export  const securityFeatures = [
       boldTitle: "Define and enforce policies.",
       descriptionText: (
         <>
-          <a href="#" className="text-[#7DD3FC] border-b hover:border-b-2">Apply consistent, non-overridable rulesets</a> across every repository in your enterprise.
+          <Link to="https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-code-governance" className="text-[#7DD3FC] border-b hover:border-b-2">Apply consistent, non-overridable rulesets</Link> across every repository in your enterprise.
         </>
       )
     },
@@ -174,7 +176,7 @@ export  const securityFeatures = [
       boldTitle: "Take command of your AI agents.",
       descriptionText: (
         <>
-          <a href="#" className="text-[#7DD3FC] border-b hover:border-b-2">See and control every agent and action</a> from a single dashboard.
+          <Link to="https://docs.github.com/en/copilot/concepts/agents/enterprise-management" className="text-[#7DD3FC] border-b hover:border-b-2">See and control every agent and action</Link> from a single dashboard.
         </>
       )
     }
@@ -198,9 +200,9 @@ export  const securityFeatures = [
             <p>
               As an extensible platform solution, GitHub Enterprise enables
               organizations to{" "}
-              <a href="#" className="text-cyan-400 underline">
+              <Link to="#" className="text-cyan-400 underline">
                 seamlessly integrate additional tools and functionalities
-              </a>
+              </Link>
               , tailoring their development environment to meet specific needs.
             </p>
           </>
@@ -250,9 +252,9 @@ export  const securityFeatures = [
               capabilities.
             </p>
 
-            <a href="#" className="text-cyan-400 underline">
+            <Link to="#" className="text-cyan-400 underline">
               Learn more about GitHub Enterprise Cloud
-            </a>
+            </Link>
           </>
         ),
       },
@@ -298,9 +300,9 @@ export  const securityFeatures = [
               Start by evaluating your organization's development needs.
             </p>
 
-            <a href="#" className="text-cyan-400 underline">
+            <Link to="#" className="text-cyan-400 underline">
               Get started with GitHub Enterprise
-            </a>
+            </Link>
           </>
         ),
       },
